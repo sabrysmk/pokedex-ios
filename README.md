@@ -1,2 +1,2 @@
 # pokedex-ios
-Trying to build useful 
+Trying to build smth useful 
