@@ -11,7 +11,6 @@ import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
-    
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -99,7 +98,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         print(poke.name)
-        performSegueWithIdentifier("PokemonDetailVC", sender: poke)
+        performSegueWithIdentifier("PokemonDetailsVC", sender: poke)
         
     }
     
@@ -152,7 +151,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "PokemonDetailVC" {
+        if segue.identifier == "PokemonDetailsVC" {
             if let detailsVC = segue.destinationViewController as? PokemonDetailVC {
                 if let poke = sender as? Pokemon {
                     detailsVC.pokemon = poke
@@ -161,3 +160,4 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
 }
+
