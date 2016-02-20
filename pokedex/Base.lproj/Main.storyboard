@@ -108,14 +108,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="FQ4-2H-Jr0">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="FQ4-2H-Jr0">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Ra-Ol-OJG" secondAttribute="bottom" constant="20" id="8fx-bf-ZUp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Ra-Ol-OJG" secondAttribute="bottom" id="8fx-bf-ZUp"/>
                             <constraint firstItem="FQ4-2H-Jr0" firstAttribute="top" secondItem="z3d-uR-aIN" secondAttribute="bottom" id="93L-9P-tIj"/>
                             <constraint firstItem="VB2-uO-mBf" firstAttribute="top" secondItem="z3d-uR-aIN" secondAttribute="bottom" id="ExQ-6o-cgH"/>
                             <constraint firstItem="FQ4-2H-Jr0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IhN-ou-z4t"/>
@@ -142,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="1Ra-Ol-OJG" id="xRT-8x-E42"/>
+                        <outlet property="searchBar" destination="FQ4-2H-Jr0" id="IM1-uv-TDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
