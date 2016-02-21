@@ -96,7 +96,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="067F0AE4-9F8D-42E9-B930-00C3C558A337" translatesAutoresizingMaskIntoConstraints="NO" id="AOE-vf-46T">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="64B41BCE-8E43-4773-8F47-DAA839517C65" translatesAutoresizingMaskIntoConstraints="NO" id="AOE-vf-46T">
                                                     <rect key="frame" x="0.0" y="0.0" width="110" height="87"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvC-LZ-aDY">
@@ -208,6 +208,9 @@
                                             <constraint firstAttribute="height" constant="24" id="JBT-in-rjw"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="9bH-nR-MPX" eventType="touchUpInside" id="RoZ-AQ-zMC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -255,13 +258,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-NV-7PB">
                                         <rect key="frame" x="0.0" y="189" width="560" height="21"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m0-xA-q9i">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m0-xA-q9i">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grass / Psychic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zl-uw-dFg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grass / Psychic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zl-uw-dFg">
                                                 <rect key="frame" x="91" y="0.0" width="255" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -406,7 +409,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttack" destination="u5O-c0-HF7" id="S6w-D7-EYR"/>
+                        <outlet property="currentEvoImg" destination="Ahb-gr-Gvz" id="mpW-Zn-ijr"/>
+                        <outlet property="defenseLbl" destination="Xzk-JA-MZ5" id="96j-d3-RFM"/>
+                        <outlet property="descriptionLbl" destination="Aav-ox-6nY" id="Mvj-k6-vbq"/>
+                        <outlet property="evoLbl" destination="jsz-r1-yRS" id="8oY-pL-LGC"/>
+                        <outlet property="heightLbl" destination="NOo-MK-4ak" id="KE7-xB-LSw"/>
+                        <outlet property="mainImg" destination="29Q-5v-kdg" id="4So-Ae-Ti3"/>
                         <outlet property="nameLbl" destination="eI0-yZ-1Bw" id="6av-az-ClU"/>
+                        <outlet property="nextEvoImg" destination="Xxx-Dc-eKE" id="8Rr-0z-DbK"/>
+                        <outlet property="pokedexLbl" destination="pkk-NS-sEc" id="rx5-ZW-U31"/>
+                        <outlet property="typeLbl" destination="6zl-uw-dFg" id="OXI-fc-2EN"/>
+                        <outlet property="weightLbl" destination="ryB-R3-xGO" id="y4f-aj-Jdq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMR-EW-7OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -415,7 +429,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="067F0AE4-9F8D-42E9-B930-00C3C558A337" width="120" height="120">
+        <image name="122" width="120" height="120"/>
+        <image name="383" width="96" height="96"/>
+        <image name="437" width="120" height="120"/>
+        <image name="64B41BCE-8E43-4773-8F47-DAA839517C65" width="120" height="120">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1426,9 +1443,6 @@ AL8AxADbAN0A3+qB6obqkeqa6q3qseq86sXqyurS6tXq2urp6u3q9Or86wnrDusQ6xLrF+sf6yLrJ+sv
 6zLrROtH60wAAAAAAAACAQAAAAAAAABBAAAAAAAAAAAAAAAAAADrTg
 </mutableData>
         </image>
-        <image name="122" width="120" height="120"/>
-        <image name="383" width="96" height="96"/>
-        <image name="437" width="120" height="120"/>
         <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>
         <image name="music" width="100" height="100"/>
