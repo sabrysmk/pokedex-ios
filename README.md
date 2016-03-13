@@ -1,6 +1,6 @@
 # pokedex-ios
 <h1 align="center">
-	<img src="images/nerd-fonts-logo.png" alt="nerd fonts">
+	<img src="images/images.png" alt="pokedexs">
 </h1>
 
 <!---
