@@ -18,8 +18,9 @@ Version 1.0:
 * Next evolution viev
 * Vertical and Horizontal align
 * Mark your favarite pokemon
--------------------------------
+
 Next update info:
+-------------------------------
 * Over 1200 pokemons
 * Vertical and Horizontal align and iPad ver
 * Create your accaunt and start collect.
