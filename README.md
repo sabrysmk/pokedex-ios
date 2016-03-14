@@ -15,7 +15,7 @@ Version 1.0:
 * Over 700 pokemons
 * Beautiful images
 * Serch as u typing
-* Next evolution viev
+* Next evolution view
 * Vertical and Horizontal align
 * Mark your favarite pokemon
 
